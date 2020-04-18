@@ -22,7 +22,10 @@ Sending fail2ban notifications using a Telegram bot
   `systemctl restart fail2ban`
  
 ## Usage
-- /etc/fail2ban/scripts/send_telegram_notif.sh -a ( start || stop ) || -b $IP || -u $IP"
-
++ /etc/fail2ban/scripts/send_telegram_notif.sh -a ( start || stop ) || -b $IP || -u $IP"
+  + -a (action)
+  + -b (ban)
+  + -u (unban)
+  
 ## More info
 - Buy me a coffe [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U01LTQB)
