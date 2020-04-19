@@ -5,7 +5,7 @@
 Sending **fail2ban** notifications using a **Telegram** bot
 
 ## Installation and configuration
-- Add the following two lines, for example, to **SSHD** in the file **/etc/fail2ban/jail.conf**, make sure to tab the word telegram.
+- Add the following two lines, for example, to **SSHD** in the file **/etc/fail2ban/jail.conf**, make sure to tab the word **telegram**.
   
   `action  = iptables[name=SSH, port=22, protocol=tcp]`
 	
