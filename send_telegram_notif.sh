@@ -22,7 +22,7 @@
 # Telegram BOT Token 
 telegramBotToken='YOUR_BOT_TOKEN'
 
-# Telegram Chat ID (must include the dash (-23232323)
+# Telegram Chat ID
 telegramChatID='YOUR_CHAT_ID'
 
 function talkToBot() {
