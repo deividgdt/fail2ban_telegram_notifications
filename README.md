@@ -33,5 +33,6 @@ Sending **fail2ban** notifications using a **Telegram** bot
   + -b (ban)
   + -u (unban)
   
-## More info
-- Buy me a coffe [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U01LTQB)
+## Buy me a coffe
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U01LTQB)
+
