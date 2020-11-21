@@ -22,7 +22,7 @@ Sending **fail2ban** notifications using a **Telegram** bot
   `telegramChatID=YOUR_CHAT_ID`
 - Make the file executable
 
-  `chmod +x /etc/fail2ban/scripts/end_telegram_notif.sh`
+  `chmod +x /etc/fail2ban/scripts/send_telegram_notif.sh`
 - Restart the fail2ban service and enjoy!
 
   `systemctl restart fail2ban`
