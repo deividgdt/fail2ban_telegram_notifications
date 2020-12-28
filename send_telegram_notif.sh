@@ -13,8 +13,8 @@
 # actionstart = /etc/fail2ban/scripts/send_telegram_notif.sh -a start 
 # actionstop = /etc/fail2ban/scripts/send_telegram_notif.sh -a stop
 # actioncheck = 
-# actionban = /etc/fail2ban/scripts/send_telegram_notif.sh -b <ip>
-# actionunban = /etc/fail2ban/scripts/send_telegram_notif.sh -u <ip>
+# actionban = /etc/fail2ban/scripts/send_telegram_notif.sh -n <name> -b <ip>
+# actionunban = /etc/fail2ban/scripts/send_telegram_notif.sh -n <name> -u <ip>
 # 
 # [Init]
 # init = 123
@@ -39,6 +39,9 @@ while getopts "a:b:u:" opt; do
 	case "$opt" in
 		a)
 			action=$OPTARG
+		;;
+		n)
+			jail_name=$OPTARG
 		;;
 		b)
 			ban=y
@@ -69,10 +72,10 @@ if [[ ! -z ${action} ]]; then
 		;;
 	esac
 elif [[ ${ban} == "y" ]]; then
-	talkToBot "The IP: ${ip_add_ban} has been banned"
+	talkToBot "[${jail_name}] The IP: ${ip_add_ban} has been banned"
 	exit 0;
 elif [[ ${unban} == "y" ]]; then
-	talkToBot "The IP: ${ip_add_unban} has been unbanned"
+	talkToBot "[${jail_name}] The IP: ${ip_add_unban} has been unbanned"
 	exit 0;
 else
 	info
