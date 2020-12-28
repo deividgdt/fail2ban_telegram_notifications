@@ -35,7 +35,7 @@ if [ $# -eq 0 ]; then
 	exit 1;
 fi
 
-while getopts "a:b:u:" opt; do
+while getopts "a:n:b:u:" opt; do
 	case "$opt" in
 		a)
 			action=$OPTARG
