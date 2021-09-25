@@ -28,7 +28,7 @@ Sending **fail2ban** notifications using a **Telegram** bot
   `systemctl restart fail2ban`
  
 ## Usage
-+ /etc/fail2ban/scripts/send_telegram_notif.sh -a ( start || stop ) || { -n $NAME -b $IP || -n $NAME -u $IP }"
++ /etc/fail2ban/scripts/send_telegram_notif.sh -a [ start || stop ] || [ -n $NAME -b $IP || -n $NAME -u $IP ]"
   + -a (action)
   + -n (jail name)
   + -b (ban)
